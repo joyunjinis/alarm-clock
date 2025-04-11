@@ -28,7 +28,7 @@ function setBattery(level) {
 function startBatteryDrain() {
   setInterval(() => {
     if (batteryLevel > 0) {
-      batteryLevel -= 10;
+      batteryLevel -= 1;
       setBattery(batteryLevel);
     } else {
       const clockTarget = document.getElementById("clock");
